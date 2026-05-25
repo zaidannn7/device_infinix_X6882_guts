@@ -5,7 +5,7 @@
 #
 
 # API levels
-PRODUCT_SHIPPING_API_LEVEL := 31
+PRODUCT_SHIPPING_API_LEVEL := 33
 
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
@@ -138,22 +138,22 @@ PRODUCT_COPY_FILES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.3-service \
-    android.hardware.memtrack-service.mediatek
+    android.hardware.graphics.composer@2.3-service:64 \
+    android.hardware.memtrack-service.mediatek:64
 
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.allocator@4.0.vendor \
-    android.hardware.graphics.mapper@4.0.vendor \
-    libion.vendor \
-    libui.vendor \
-    libdrm.vendor
+    android.hardware.graphics.allocator@4.0.vendor:64 \
+    android.hardware.graphics.mapper@4.0.vendor:64 \
+    libion.vendor:64 \
+    libui.vendor:64 \
+    libdrm.vendor:64
 
 PRODUCT_PACKAGES += \
     ANGLE
 
 # DRM
 PRODUCT_PACKAGES += \
-    com.android.hardware.drm.clearkey
+    com.android.hardware.drm.clearkey:64
 
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -163,8 +163,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
 # FastbootD
 PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.1-impl-mock \
-    fastbootd
+    android.hardware.fastboot@1.1-impl-mock:64 \
+    fastbootd:64
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -172,22 +172,22 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0-impl:64 \
     android.hardware.gatekeeper@1.0-service
 
 PRODUCT_PACKAGES += \
-    libgatekeeper.vendor
+    libgatekeeper.vendor:64
 
 # GNSS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss.measurement_corrections@1.1.vendor \
-    android.hardware.gnss.visibility_control@1.0.vendor \
-    android.hardware.gnss@1.1.vendor \
-    android.hardware.gnss@2.1.vendor \
-    android.hardware.gnss-V1-ndk.vendor
+    android.hardware.gnss.measurement_corrections@1.1.vendor:64 \
+    android.hardware.gnss.visibility_control@1.0.vendor:64 \
+    android.hardware.gnss@1.1.vendor:64 \
+    android.hardware.gnss@2.1.vendor:64 \
+    android.hardware.gnss-V1-ndk.vendor:64
 
 PRODUCT_PACKAGES += \
-    libcurl.vendor
+    libcurl.vendor:64
 
 # Health
 PRODUCT_PACKAGES += \
@@ -197,15 +197,15 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hidl.allocator@1.0 \
-    android.hidl.base@1.0.vendor \
-    android.hidl.allocator@1.0.vendor \
-    libhidltransport \
-    libhidltransport.vendor \
-    libhidlmemory.vendor \
-    libhwbinder \
-    libhwbinder.vendor
+    android.hidl.base@1.0:64 \
+    android.hidl.allocator@1.0:64 \
+    android.hidl.base@1.0.vendor:64 \
+    android.hidl.allocator@1.0.vendor:64 \
+    libhidltransport:64 \
+    libhidltransport.vendor:64 \
+    libhidlmemory.vendor:64 \
+    libhwbinder:64 \
+    libhwbinder.vendor:64
 
 # Init files
 PRODUCT_PACKAGES += \
@@ -288,9 +288,9 @@ PRODUCT_COPY_FILES += \
 
 # Neural networks
 PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.0.vendor \
-    android.hardware.neuralnetworks@1.3.vendor \
-    libtextclassifier_hash.vendor
+    android.hardware.neuralnetworks@1.0.vendor:64 \
+    android.hardware.neuralnetworks@1.3.vendor:64 \
+    libtextclassifier_hash.vendor:64
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -366,17 +366,17 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service.pixel-libperfmgr
 
 PRODUCT_PACKAGES += \
-    vendor.mediatek.hardware.mtkpower@1.2-service.stub \
-    vendor.mediatek.hardware.mtkpower@1.0.vendor \
-    vendor.mediatek.hardware.mtkpower@1.1.vendor
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub:64 \
+    vendor.mediatek.hardware.mtkpower@1.0.vendor:64 \
+    vendor.mediatek.hardware.mtkpower@1.1.vendor:64
 
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3.vendor
+    android.hardware.power@1.3.vendor:64
 
 # Power | Dummy mtkperf lib
 PRODUCT_PACKAGES += \
-    libmtkperf_client_vendor \
-    libmtkperf_client
+    libmtkperf_client_vendor:64 \
+    libmtkperf_client:64
 
 # Power configurations
 PRODUCT_COPY_FILES += \
@@ -397,12 +397,12 @@ PRODUCT_COPY_FILES += \
 
 # Radio
 PRODUCT_PACKAGES += \
-    android.hardware.radio.config@1.3.vendor \
-    android.hardware.radio@1.6.vendor
+    android.hardware.radio.config@1.3.vendor:64 \
+    android.hardware.radio@1.6.vendor:64
 
 # Secure Element
 PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.2.vendor
+    android.hardware.secure_element@1.2.vendor:64
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -467,22 +467,22 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
-    libbase_shim \
-    libprocessgroup_shim \
-    libcamera_metadata_shim \
-    libstagefright_foundation-v33 \
-    libtinyxml2-v34
+    libbase_shim:64 \
+    libprocessgroup_shim:64 \
+    libcamera_metadata_shim:64 \
+    libstagefright_foundation-v33:64 \
+    libtinyxml2-v34:64
 
 PRODUCT_PACKAGES += \
-    libutils-v31 \
-    libhidlbase-v31 \
-    libbinder-v31 \
-    libunwindstack.vendor \
-    libutilscallstack.vendor
+    libutils-v31:64 \
+    libhidlbase-v31:64 \
+    libbinder-v31:64 \
+    libunwindstack.vendor:64 \
+    libutilscallstack.vendor:64
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
-    libwifi-hal-wrapper \
+    libwifi-hal-wrapper:64 \
     android.hardware.wifi-service \
     wpa_supplicant \
     lib_driver_cmd_mt66xx \
