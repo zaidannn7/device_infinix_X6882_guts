@@ -253,11 +253,11 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.lineage
+    android.hardware.lights-service.transsion
 
 # Lineage-Specific Overlays
 PRODUCT_PACKAGES += \
-    LineageApertureOverlayTarget \
+	LineageApertureOverlayTarget \
     LineageDialerOverlayTarget \
     LineageSettingsOverlayTarget
 
