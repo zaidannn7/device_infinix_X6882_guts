@@ -1,0 +1,9 @@
+java_library {
+    name: "x6882-health-service-lib",
+    srcs: ["src/**/*.java"],
+    platform_apis: true,
+    static_libs: [
+        "org.lineageos.platform",
+    ],
+    installable: true,
+}

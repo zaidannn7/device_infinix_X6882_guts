@@ -1,0 +1,7 @@
+type x6882_health, domain;
+type x6882_health_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(x6882_health)
+
+allow x6882_health sysfs_batteryinfo:file rw_file_perms;
+allow x6882_health sysfs:file rw_file_perms;

@@ -47,7 +47,9 @@ type proc_game_state, fs_type, proc_type, sysfs_type;
 
 # VMAX
 type aw87xxx_vmax, fs_type, sysfs_type;
+
 type proc_vm_dirty, fs_type, proc_type;
+
 type proc_dirty_ratio, fs_type, proc_type;
 
 # GameBar

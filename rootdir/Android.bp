@@ -106,3 +106,10 @@ sh_binary {
     src: "bin/init.insmod.sh",
     vendor: true
 }
+
+prebuilt_etc {
+    name: "init.x6882_health.rc",
+    src: "etc/init/hw/init.x6882_health.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}

@@ -4,3 +4,5 @@ allow system_server sysfs_vibrator:file { read open getattr write };
 allow system_server app_zygote_tmpfs:file write;
 
 get_prop(system_server, wifi_hal_prop)
+
+allow system_server sysfs_gpu:file rw_file_perms;

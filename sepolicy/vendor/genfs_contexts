@@ -66,4 +66,3 @@ genfscon proc /game_state              u:object_r:proc_game_state:s0
 
 # aw87xxx vmax
 genfscon sysfs /devices/platform/1101a000.i2c7/i2c-7/7-0058/vmax u:object_r:aw87xxx_vmax:s0
-

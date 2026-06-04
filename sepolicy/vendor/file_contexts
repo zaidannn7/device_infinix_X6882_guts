@@ -85,3 +85,5 @@
 /(vendor|system\/vendor)/bin/hw/android\.hardware\.vibrator-service\.mediatek                u:object_r:hal_vibrator_default_exec:s0
 /sys/devices/platform/soc/1101a000.i2c/i2c-6/6-0034/leds/vibrator_single(/.*)?               u:object_r:sysfs_vibrator:s0
 /sys/devices/platform/soc/1101a000.i2c/i2c-6/6-005a/leds/vibrator_single(/.*)?               u:object_r:sysfs_vibrator:s0
+
+/vendor/bin/x6882-health-service u:object_r:x6882_health_exec:s0

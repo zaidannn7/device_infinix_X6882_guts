@@ -1,0 +1,9 @@
+service x6882health /vendor/bin/x6882-health-service
+    class main
+    user system
+    group system
+    oneshot
+    disabled
+
+on property:sys.boot_completed=1
+    start x6882health
