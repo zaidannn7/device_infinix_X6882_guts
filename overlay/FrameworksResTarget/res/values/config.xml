@@ -453,22 +453,19 @@
 
      <!-- Default list of files pinned by the Pinner Service -->
      <string-array translatable="false" name="config_defaultPinnerServiceFiles">
-        <item>"/system/framework/framework.jar"</item>
-        <item>"/system/framework/services.jar"</item>
-        <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
-        <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
-        <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
-        <item>"/system/bin/surfaceflinger"</item>
+          <item>"/system/framework/framework.jar"</item>
+          <item>"/system/framework/services.jar"</item>
+          <item>"/system/framework/arm64/boot.oat"</item>
+          <item>"/system/framework/arm64/boot-core-libart.oat"</item>
+          <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
+          <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
+          <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
+          <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
+          <item>"/system/bin/surfaceflinger"</item>
      </string-array>
      
      <!-- Should the pinner service pin the Home application? -->
      <bool name="config_pinnerHomeApp">true</bool>
-
-     <!-- Bytes that the PinnerService will pin for Home app -->
-     <integer name="config_pinnerHomePinBytes">6291456</integer>
-
-     <!-- Bytes that the PinnerService will pin for WebView -->
-     <integer name="config_pinnerWebviewPinBytes">6291456</integer>
 
     <!-- List of comma separated package names for which we the system will not show crash like
          tts, etc. dialogs. -->
@@ -585,4 +582,7 @@
     <!-- If not empty, sets the AVC codec profile level used for the internal screen recorder.
          Possible values: 3, 3.1, 3.2, 4, 4.1, 4.2 -->
     <string name="config_screenRecorderAVCProfileLevel" translatable="false">3.1</string>
+
+    <!-- Bytes that the PinnerService will pin for Home app -->
+    <integer name="config_pinnerHomePinBytes">6291456</integer>
 </resources>
