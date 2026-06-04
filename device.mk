@@ -47,6 +47,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
 
+# GameBar
+$(call inherit-product-if-exists, packages/apps/GameBar/gamebar.mk)
+
 # Allow userspace reboots
 $(call inherit-product, $(SRC_TARGET_DIR)/product/userspace_reboot.mk)
 

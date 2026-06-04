@@ -1,0 +1,4 @@
+allow gamebar_app sysfs_therm:dir r_dir_perms;
+allow gamebar_app sysfs_therm:file r_file_perms;
+allow gamebar_app sysfs_ged:dir r_dir_perms;
+allow gamebar_app sysfs_ged:file r_file_perms;
