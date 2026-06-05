@@ -2,6 +2,9 @@
 persist.sys.activity_anim_perf_override=true
 
 # RKPD
-remote_provisioning.enable_rkpd=true
 remote_provisioning.hostname=remoteprovisioning.googleapis.com
-remote_provisioning.connect_timeout_millis=2000
+remote_provisioning.connect_timeout_millis=200000
+
+# Skia tracing
+debug.hwui.skia_tracing_enabled=false
+debug.hwui.skia_use_perfetto_track_events=false
