@@ -1,2 +1,1 @@
 allow thermal_core sysfs_thermal:dir search;
-allow thermal_core vendor_configs_file:file r_file_perms;
