@@ -190,6 +190,9 @@ on property:sys.boot_completed=1
     write /sys/block/sda/queue/iostats 0
     write /sys/block/sdb/queue/iostats 0
     write /sys/block/sdc/queue/iostats 0
+    
+    # Perf cpu tuning
+    write /proc/sys/kernel/perf_cpu_time_max_percent 1
 
 service vendor.hwcomposer-2-3 /vendor/bin/hw/android.hardware.graphics.composer@2.3-service
     class hal animation
