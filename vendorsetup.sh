@@ -2,7 +2,7 @@
 
 rm -rf vendor/infinix 
 git clone --depth=1 -b stagging https://github.com/zaidannn7/vendor_infinix_X6882 vendor/infinix/X6882
-git clone --depth=1 https://github.com/zaidannn7/device_infinix_X6882-kernel device/infinix/X6882-kernel
+git clone --depth=1 https://github.com/javas-prjkt/device_infinix_X6882-kernel device/infinix/X6882-kernel
 
 rm -rf vendor/mediatek hardware/transsion device/mediatek/sepolicy_vndr device/millennium/common-kernel packages/apps/GameBar
 
@@ -10,7 +10,7 @@ git clone --depth=1 -b sixteen-oem https://github.com/MillenniumOSS/android_vend
 git clone --depth=1 https://github.com/zaidannn7/hardware_transsion hardware/transsion
 git clone --depth=1 https://github.com/halcyonproject/device_mediatek_sepolicy_vndr device/mediatek/sepolicy_vndr
 git clone --depth=1 https://github.com/halcyonproject/hardware_mediatek hardware/mediatek
-git clone https://github.com/MillenniumOSS/android_device_millennium_common-kernel device/millennium/common-kernel
+#git clone https://github.com/MillenniumOSS/android_device_millennium_common-kernel device/millennium/common-kernel
 
 git clone  --depth=1 https://github.com/Tanzanite-Prjkt/android_packages_apps_GameBar packages/apps/GameBar
 
