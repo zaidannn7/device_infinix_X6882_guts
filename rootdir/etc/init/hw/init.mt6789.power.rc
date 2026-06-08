@@ -207,3 +207,7 @@ service vendor.gralloc-4-0 /vendor/bin/hw/mt6789/android.hardware.graphics.alloc
     onrestart restart surfaceflinger
     task_profiles ProcessCapacityHigh HighPerformance
     override
+    
+on property:sys.boot_completed=1
+    stop statsd
+    
